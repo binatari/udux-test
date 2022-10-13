@@ -18,6 +18,7 @@ import udux from "../assets/images/udux.svg";
 
 import burna from "../assets/images/burna-boy.png";
 import adekunle from "../assets/images/adekunle.png";
+import ArtistCard from "../components/card/ArtistCard";
 
 function Home() {
   const items = [
@@ -67,32 +68,20 @@ function Home() {
           sm={24}
           className="mb-24 bg-header relative h-hero"
         >
-          <img src={udux} className="top-right no-display" />
-          <img src={omah} className="bottom-right no-display" />
+          <img src={udux} className="top-right no-display" alt="logo" />
+          <img src={omah} className="bottom-right no-display" alt="omah_lay" />
         </Col>
       </Row>
       <h3 className="home-text">Welcome Back!</h3>
       <div xs={24} sm={24} className="mb-24 card-row">
         {items.map(({ header, body, image }) => (
-          <div className="music-card">
-            <img src={image} />
-            <p>
-              {header}
-              <span>{body}</span>
-            </p>
-          </div>
+         <ArtistCard header={header} body={body} image={image}/>
         ))}
       </div>
       <h3 className="home-text">Cheers to the Weekend </h3>
       <div xs={24} sm={24} className="mb-24 card-row">
       {items.map(({ header, body, image }) => (
-          <div className="music-card">
-            <img src={image} />
-            <p>
-              {header}
-              <span>{body}</span>
-            </p>
-          </div>
+          <ArtistCard header={header} body={body} image={image}/>
         ))}
       </div>
 

@@ -361,7 +361,7 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="">
-          <NavLink to="/dashboard">
+          <NavLink to="/">
             <span className="icon" style={{ fill: "transparent" }}>
               {liked}
             </span>

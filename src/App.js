@@ -21,8 +21,8 @@ function App() {
     <div className="App">
       <Switch>
         <Main>
-          <Route exact path="/dashboard" component={Home} />
-          <Redirect from="*" to="/dashboard" />
+          <Route exact path="/" component={Home} />
+          <Redirect from="*" to="/" />
         </Main>
       </Switch>
     </div>

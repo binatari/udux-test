@@ -73,7 +73,7 @@ function Home() {
         ))}
       </div>
 
-      <div className="layout-content">
+      <div className="layout-content" style={{marginBottom:'4em'}}>
         <Row className="rowgap-vbox" gutter={[24, 0]}></Row>
       </div>
     </div>

@@ -2279,8 +2279,10 @@ button.ant-btn.bell strong {
 
 .layout-dashboard .ant-layout-footer {
   background: transparent;
-  margin: 0 20px 20px 20px;
-  padding: 0;
+  padding: 24px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .layout-dashboard .ant-layout-content {
